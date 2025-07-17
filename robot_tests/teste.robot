@@ -3,13 +3,10 @@ Library  SeleniumLibrary
 
 ** Variables **
 ${SITE_URL}  https://automationpratice.com.br/
-${SITE_URL_CLARA}  https://google.com/
 ${USUARIO_EMAIL}  teste@gmail.com
 ${USUARIO_SENHA}  123456
 
 ** Keywords **
-Abrir site Clara
-    Open Browser  ${SITE_URL_CLARA}  chrome
 
 Abrir site
     Open Browser  ${SITE_URL}  chrome
@@ -55,21 +52,9 @@ Cenário 1: Acessando o site do Robot
     Screenshot
     Aguardar site carregar 
     Verificar texto de login realizado
-    Screenshot
-
-Cenário 2: Testando o Robot 
-    [Tags]  Cenario2
-    Abrir site Clara
-    Aguardar site carregar 
-    Clicar sobre o botao Login
-    Aguardar site carregar 
-    Digitar email
-    Digitar senha   
-    Clicar em logar
-    Aguardar site carregar  
-    Verificar texto de login realizado  
+    Screenshot 
     
-Cenário 3: Testando valor nos steps 
+Cenário 2: Testando valor nos steps 
     [Tags]  Cenario3
     Abrir este site  https://automationpratice.com.br/
     Aguardar site carregar 
